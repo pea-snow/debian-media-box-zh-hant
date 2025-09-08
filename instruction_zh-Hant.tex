@@ -9,12 +9,13 @@
 \geometry{left=9mm,right=9mm,top=9mm,bottom=9mm}
 \usepackage{fontspec}
 \setmainfont{DejaVu Sans}[Scale=0.9]
+\setsansfont{DejaVu Sans}[Scale=0.9]
 
 \usepackage{xeCJK}
-%\CJKfamily{zhsong} 由於 TeX Live 中自帶字體對於繁體中文字庫支援不佳，故註釋
-\setCJKmainfont[BoldFont=GenKiMin2TW-B.otf]{GenKiMin2TW-R.otf} %可在 ButTaiwan/genyo-font 取得
-\setCJKsansfont[BoldFont=GenKiGothic2TW-B.otf]{GenKiGothic2TW-R.otf} %可在 ButTaiwan/genyog-font 取得
-%取得對應字體後，請將需要的字型檔放在本檔案同一目錄下以正常編譯。
+%\CJKfamily{zhsong} 由於 TeX Live 中自帶 Fandol 字體對於繁體中文字庫支援不佳，故註釋
+\setCJKmainfont{GenKiMin2 TW} %可在 ButTaiwan/genyo-font 取得
+\setCJKsansfont{GenKiGothic2 TW} %可在 ButTaiwan/genyog-font 取得
+%請安裝需要的字體以正常編譯。
 
 \usepackage{longfbox}
 \usepackage{epstopdf}
@@ -166,7 +167,7 @@
 	\section*{內容}
 	\end{tcolorbox}
 
-	完全由自由軟體組成的類 UNIX 作業系統，其包含的多數軟體使用 GNU 通用公共授權協議授權，並由 Debian 計畫的參與者組成團隊打包、開發與維護。
+	完全由自由軟體組成的類 UNIX 作業系統，其包含的多數軟體使用 GNU 通用公共許可協議授權，並由 Debian 計畫的參與者組成團隊打包、開發與維護。
 
 	% 内核版本：4.19.0
 
@@ -220,7 +221,7 @@
 	\section*{不良反應}
 	\end{tcolorbox}
 
-	Debian 設有缺陷追蹤系統，用於歸檔管理使用者和開發者所提交的軟體缺陷報告，英文縮寫為 BTS。每個軟體缺陷報告都將授予一個編號並長期跟踪，直至標記為已修復。
+	Debian 設有缺陷追蹤系統，用於歸檔管理使用者和開發者所提交的軟體缺陷報告，英文縮寫為 BTS。每個軟體缺陷報告都將授予一個編號並長期跟蹤，直至標記為已修復。
 
 	可在 https://www.debian.org/Bugs/ 獲取該檔案的副本。
 
@@ -360,7 +361,7 @@
 		\multirow{4}{*}{}{開放原始碼許可：} & GNU GPL（主要）\\
 		~ & GNU LGPL \\
 		~ & BSD \\
-		~ & 以及其他授權協議 \\
+		~ & 以及其他授權條款 \\
 	\end{tabularx}
 
 	\medskip
